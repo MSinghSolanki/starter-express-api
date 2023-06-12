@@ -6,7 +6,7 @@ const userController = require("./controllers/user.controller");
 const productController = require("./controllers/product.controller");
 const { register, login, newToken } = require("./controllers/auth.controlller")
 
-
+const passport = require("passport");
 
 app.use(cors());
 
