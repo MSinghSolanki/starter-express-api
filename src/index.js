@@ -6,15 +6,6 @@ const userController = require("./controllers/user.controller");
 const productController = require("./controllers/product.controller");
 const { register, login, newToken } = require("./controllers/auth.controlller")
 
-// const passport = require("./configs/google.oauth");
-
-// const fileupload = require("express-fileupload")
-
-
-// app.use(fileupload({
-//   useTempFiles:true
-// }))
-
 
 
 app.use(cors());
@@ -29,13 +20,6 @@ app.post("/login", login);
 app.use("/users", userController);
 app.use("/products", productController);
 
-// passport.serializeUser(function (user, done) {
-//   done(null, user);
-// });
-
-// passport.deserializeUser(function (user, done) {
-//   done(null, user);
-// });
 
 app.get(
   "/auth/google",
